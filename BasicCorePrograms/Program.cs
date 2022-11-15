@@ -11,27 +11,17 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Flip Coin ");
-            Random random = new Random();
-            Console.WriteLine("Enter the number of times you want to flip coin");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int head = 0, tail = 0;
-            for (int i = 0; i < n; i++)
+            Console.WriteLine("Leap Year Program");
+            Console.WriteLine("Enter the year in YYYY format:");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if((year % 4 == 0) &&(year % 100 != 0) || (year % 400 == 0))
             {
-                double coinFlipped = random.NextDouble();
-                if (coinFlipped < 0.5)
-                {
-                    tail++;
-                }
-                else
-                {
-                    head++;
-                }
+                Console.WriteLine("{0} is a leap year.", year);
             }
-            double headPercentage = head * 100 / n;
-            Console.WriteLine($"Head won {head} times, Head Score: {headPercentage}%");
-            double tailPercentage = tail * 100 / n;
-            Console.WriteLine($"Tail won {tail} times, Tail Score: {tailPercentage}%");
+            else
+            {
+                Console.WriteLine("{0} is not a leap year.", year);
+            }
             Console.ReadLine();
         }
     }
