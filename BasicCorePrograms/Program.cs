@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace BasicCorePrograms
 {
@@ -11,17 +12,15 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Leap Year Program");
-            Console.WriteLine("Enter the year in YYYY format:");
-            int year = Convert.ToInt32(Console.ReadLine());
-            if((year % 4 == 0) &&(year % 100 != 0) || (year % 400 == 0))
+            Console.WriteLine("Power Of 2 Program");
+            int baseNumber = 2;
+            Console.WriteLine("Enter the power value:");
+            int power = Convert.ToInt32(Console.ReadLine());
+            for(int i=1; i< power;i++)
             {
-                Console.WriteLine("{0} is a leap year.", year);
+                baseNumber = baseNumber * 2;
             }
-            else
-            {
-                Console.WriteLine("{0} is not a leap year.", year);
-            }
+            Console.WriteLine(baseNumber);
             Console.ReadLine();
         }
     }
