@@ -12,15 +12,15 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Power Of 2 Program");
-            int baseNumber = 2;
-            Console.WriteLine("Enter the power value:");
-            int power = Convert.ToInt32(Console.ReadLine());
-            for(int i=1; i< power;i++)
+            Console.WriteLine("Harmonic Number");
+            Console.WriteLine("Enter the Nth number:");
+            double n = Convert.ToInt32(Console.ReadLine());
+            double result = 1;
+            for(int i=1; i< n;i++)
             {
-                baseNumber = baseNumber * 2;
+                result += (float)1 / i;
             }
-            Console.WriteLine(baseNumber);
+            Console.WriteLine($"The harmonic value obtained is: {result}");
             Console.ReadLine();
         }
     }
