@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Factors Program");
+            Console.WriteLine("Trail Program");
             Console.WriteLine("Enter the number:");
             int n = Convert.ToInt32(Console.ReadLine());
             for(int i=2; i*i<= n;i++)
