@@ -12,17 +12,18 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Swap Two Numbers Program");
-            Console.WriteLine("Enter the first number :");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the second number :");
-            int b = Convert.ToInt32(Console.ReadLine());
-            int temp;
-            temp = a;
-            a = b;
-            b = temp;
-            Console.WriteLine("a:" + a);
-            Console.WriteLine("b:" + b);
+            Console.WriteLine("Even Or Odd Program");
+            Console.WriteLine("Enter the  number :");
+            int n = Convert.ToInt32(Console.ReadLine());
+            if(n%2 == 0)
+            {
+                Console.WriteLine("{0} is an even number",n);
+            }
+            else
+            {
+                Console.WriteLine("{0} is an odd number" , n);
+            }
+            
             Console.ReadLine();
         }
     }
