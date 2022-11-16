@@ -12,24 +12,15 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Trail Program");
-            Console.WriteLine("Enter the number:");
-            int n = Convert.ToInt32(Console.ReadLine());
-            for(int i=2; i*i<= n;i++)
-            {
-                while(n%i == 0)
-                {
-                    n = n / i;
-                    Console.WriteLine(i + "");
-                    Console.WriteLine();
-                }
-               
-            }
-            if(n!=1)
-            {
-                Console.WriteLine(n);
-            }
-            Console.ReadLine();
+            Console.WriteLine("Quotient And Remainder Program");
+            Console.WriteLine("Enter the number to be divided(divident):");
+            int divident = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the number should be divided from(Divisor):");
+            int divisor = Convert.ToInt32(Console.ReadLine());
+            int remainder = divident / divisor;
+            int quotient = divident % divisor;
+            Console.WriteLine("Remainder:" + remainder);
+            Console.WriteLine("Quotient:" + quotient);
         }
     }
 }
