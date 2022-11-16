@@ -21,6 +21,7 @@ namespace BasicCorePrograms
                 {
                     n = n / i;
                     Console.WriteLine(i + "");
+                    Console.WriteLine();
                 }
                
             }
