@@ -12,30 +12,22 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Vowel or Consonant Program");
-            Console.WriteLine("Enter an alphabet :");
-            char  alphabet = Convert.ToChar(Console.ReadLine().ToLower()); 
-            switch(alphabet)
+            Console.WriteLine("Largest Of Three Numbers Program");
+            Console.WriteLine("Enter three numbers :");
+            int a = Convert.ToInt32(Console.ReadLine()); 
+            int b = Convert.ToInt32(Console.ReadLine());
+            int c = Convert.ToInt32(Console.ReadLine());
+            if (a > b && a > c)
             {
-                case 'a':
-                    Console.WriteLine("{0} is an Vowel", alphabet);
-                    break;
-                case 'e':
-                    Console.WriteLine("{0} is an Vowel", alphabet);
-                    break;
-                case 'i':
-                    Console.WriteLine("{0} is an Vowel", alphabet);
-                    break;
-                case 'o':
-                    Console.WriteLine("{0} is an Vowel", alphabet);
-                    break;
-                case 'u':
-                    Console.WriteLine("{0} is an Vowel", alphabet);
-                    break;
-                default:
-                    Console.WriteLine("{0} is an Consonant", alphabet);
-                    break;
-
+                Console.WriteLine("{0} is largest", a);
+            }
+            else if (b > c && b > a)
+            {
+                Console.WriteLine("{0} is largets", b);
+            }
+            else
+            {
+                Console.WriteLine("{0} is largest", c)
             }
             
             Console.ReadLine();
