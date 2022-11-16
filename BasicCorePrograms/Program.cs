@@ -12,16 +12,30 @@ namespace BasicCorePrograms
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Basic Core Programs");
-            Console.WriteLine("Even Or Odd Program");
-            Console.WriteLine("Enter the  number :");
-            int n = Convert.ToInt32(Console.ReadLine());
-            if(n%2 == 0)
+            Console.WriteLine("Vowel or Consonant Program");
+            Console.WriteLine("Enter an alphabet :");
+            char  alphabet = Convert.ToChar(Console.ReadLine().ToLower()); 
+            switch(alphabet)
             {
-                Console.WriteLine("{0} is an even number",n);
-            }
-            else
-            {
-                Console.WriteLine("{0} is an odd number" , n);
+                case 'a':
+                    Console.WriteLine("{0} is an Vowel", alphabet);
+                    break;
+                case 'e':
+                    Console.WriteLine("{0} is an Vowel", alphabet);
+                    break;
+                case 'i':
+                    Console.WriteLine("{0} is an Vowel", alphabet);
+                    break;
+                case 'o':
+                    Console.WriteLine("{0} is an Vowel", alphabet);
+                    break;
+                case 'u':
+                    Console.WriteLine("{0} is an Vowel", alphabet);
+                    break;
+                default:
+                    Console.WriteLine("{0} is an Consonant", alphabet);
+                    break;
+
             }
             
             Console.ReadLine();
